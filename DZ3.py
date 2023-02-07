@@ -37,8 +37,7 @@
 # [1.1, 1.2, 3.1, 5, 10.01] => 0.19
 
 # my_list = [1.1, 1.2, 3.1, 5, 10.01]
-# nul=0.0000000
-
+# первый вариант решения 3 задачи:
 # for i in range(len(my_list)):
 #     my_list[i] =  my_list[i] % 1
 # print(my_list)
@@ -52,6 +51,15 @@
 # sum=min(my_list) * max(my_list)
 # print(min(my_list), max(my_list))
 # print(sum)
+
+
+# #  Не относится к предыдущей задаче, просто вариант сложения всех чисел в строке: 
+# my_list = 'sasgff343423ffefer'
+# sum=0
+# for i in range(len(my_list)):
+#     if my_list[i].isdigit():
+#         sum+=int(my_list[i])
+# print(sum) 
 
 # 4. Напишите программу, которая будет преобразовывать десятичное число в двоичное.
 # Пример:
@@ -74,22 +82,22 @@
 # для k = 8 список будет выглядеть так:
 # [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21] Негафибоначчи
 
-num = int(input("Введите размер:"))
-my_list=[0, 1]
-my_list2=[]
+# num = int(input("Введите размер:"))
+# my_list=[0, 1]
+# my_list2=[]
 
 
-for i in range(num-1):
-    my_list.append(my_list[i] + my_list[i+1])
-print(my_list)
+# for i in range(num-1):
+#     my_list.append(my_list[i] + my_list[i+1])
+# print(my_list)
 
 
 
-for i in range(num+1):
-    my_list2.append(-(my_list[i]))
-my_list2=list(reversed(my_list2))
+# for i in range(num+1):
+#     my_list2.append(-(my_list[i]))
+# my_list2=list(reversed(my_list2))
 
-print(my_list2)
+# print(my_list2)
 
-print(my_list2 + my_list)
+# print(my_list2 + my_list)
 
