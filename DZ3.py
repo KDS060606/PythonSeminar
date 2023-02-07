@@ -37,8 +37,7 @@
 # [1.1, 1.2, 3.1, 5, 10.01] => 0.19
 
 # my_list = [1.1, 1.2, 3.1, 5, 10.01]
-# nul=0.0000000
-
+# первый вариант решения 3 задачи:
 # for i in range(len(my_list)):
 #     my_list[i] =  my_list[i] % 1
 # print(my_list)
@@ -52,6 +51,15 @@
 # sum=min(my_list) * max(my_list)
 # print(min(my_list), max(my_list))
 # print(sum)
+
+
+# #  Не относится к предыдущей задаче, просто вариант сложения всех чисел в строке: 
+# my_list = 'sasgff343423ffefer'
+# sum=0
+# for i in range(len(my_list)):
+#     if my_list[i].isdigit():
+#         sum+=int(my_list[i])
+# print(sum) 
 
 # 4. Напишите программу, которая будет преобразовывать десятичное число в двоичное.
 # Пример:
